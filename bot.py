@@ -33,7 +33,7 @@ TG_LINK = "https://t.me/invest_er"
 
 async def initial_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Обработчик команды /start - первое сообщение с кнопкой"""
-    keyboard = [[InlineKeyboardButton("👉 START", callback_data="start")]]
+    keyboard = [[InlineKeyboardButton("👉 Узнать подробнее", callback_data="start")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     try:
